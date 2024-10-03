@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a3c1ad, #e4d1b9);
+    /* Мягкий градиент от зеленого к светло-бежевому */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    /* Темно-серый цвет текста для лучшего контраста */
+}
+
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Легкая прозрачность */
+    backdrop-filter: blur(8px);
+    /* Меньшее размытие */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Меньшая тень для мягкого эффекта */
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.03);
+    /* Меньшее увеличение при наведении */
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-info .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-info .login-date {
+    font-size: 16px;
+    color: #666;
+    /* Более светлый серый для даты */
+}
