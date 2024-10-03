@@ -7,10 +7,11 @@ use App\Events\ShowPersonEvent;
 use App\Http\Controllers\Controller;
 use App\Traits\Turnstile\QR;
 use Illuminate\Http\Request;
+use DateTime;
 
 class CheckRfIdController extends BaseController
 {
-    use QR;
+    // use QR;
     /**
      * Display a listing of the resource.
      */
@@ -25,7 +26,11 @@ class CheckRfIdController extends BaseController
     public function store(Request $request)
     {
 
-        $data = $this->check($request->all());
+        $now = new DateTime();
+        $now->modify('+4 hours');
+
+
+        $data = $now->format('d-m-Y H:i:s');
 
         event(
             new ShowPersonEvent(
