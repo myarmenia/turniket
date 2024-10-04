@@ -16,5 +16,5 @@ window.Echo.channel('show-person')
 
         setTimeout(() => {
             document.getElementById('result').innerHTML = ''
-        }, 7000);
+        }, 15000);
     });
