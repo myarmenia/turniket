@@ -15,7 +15,11 @@
 
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-
+        <div class="title-card">
+            <div class="title-info">
+                <h1 class="name">Մուտքի հասանելիության և վերահսկողության համակարգեր</h1>
+            </div>
+        </div>
         <div id="result"></div>
 
 

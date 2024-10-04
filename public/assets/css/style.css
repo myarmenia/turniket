@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #a3c1ad, #e4d1b9);
+    background: linear-gradient(135deg, #3f6d4e, #e9e8e7);
     /* Мягкий градиент от зеленого к светло-бежевому */
     display: flex;
     justify-content: center;
@@ -15,7 +15,21 @@ body {
     color: #333;
     /* Темно-серый цвет текста для лучшего контраста */
 }
-
+.title-card {
+    position: absolute;
+    top: 64px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Легкая прозрачность */
+    backdrop-filter: blur(8px);
+    /* Меньшее размытие */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Меньшая тень для мягкого эффекта */
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
 .profile-card {
     background-color: rgba(255, 255, 255, 0.8);
     /* Легкая прозрачность */
